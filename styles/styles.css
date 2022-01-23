@@ -234,3 +234,20 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
