@@ -239,10 +239,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 *, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
@@ -250,6 +246,8 @@ a {
 
 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -281,6 +279,7 @@ h1, h2, h3, h4, a {
   font-family: "Oswald", sans-serif;
   color: #171717;
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 h2 {
@@ -301,6 +300,77 @@ h4.homePage {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+}
+a.currentPage {
+  color: #f6f6f6;
+}
+
+nav {
+  background-color: #b9dde7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav .navBar ul li {
+  padding: 0 20px;
+}
+nav .navBar ul li a {
+  line-height: 1.45rem;
+}
+nav .navBar h1 {
+  padding: 10px 25px;
+}
+
 header.homePage {
   background-color: #b9dde7;
+}
+header.homePage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header.homePage .wrapper .imgContainer {
+  width: 40%;
+  position: relative;
+  top: 40px;
+  -webkit-box-shadow: 20px 20px white;
+          box-shadow: 20px 20px white;
+}
+header.homePage .wrapper .imgContainer img {
+  margin-bottom: -5px;
+}
+header.homePage .wrapper h2 {
+  position: relative;
+  padding: 30px 35px 30px 80px;
+}
+header.homePage .wrapper h2 img {
+  width: 8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

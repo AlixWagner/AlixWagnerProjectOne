@@ -1,5 +1,27 @@
-header {
-    &.homePage {
-        background-color: $primary;
+
+header.homePage {
+    background-color: $primary;
+    .wrapper {
+        display: flex;
+        align-items: center;
+        .imgContainer {
+            width: 40%;
+            position: relative;
+            top: 40px;
+            box-shadow: 20px 20px white;
+            img {
+                margin-bottom: -5px;
+            }
+        }
+        h2 {
+            position: relative;
+            padding: 30px 35px 30px 80px;
+            img {
+                width: 8rem;
+                position: absolute;
+                top:0;
+                right:0;
+            }
+        }
     }
 }

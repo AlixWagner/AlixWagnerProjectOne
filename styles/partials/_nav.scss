@@ -1,0 +1,23 @@
+nav {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    .navBar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            li {
+                padding: 0 20px;
+                a {
+                    line-height: 1.45rem;
+                }
+            }
+        }
+        h1 {
+            padding: 10px 25px;
+        }
+    }
+}
