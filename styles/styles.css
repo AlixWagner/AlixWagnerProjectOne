@@ -251,3 +251,56 @@ a {
 img {
   width: 100%;
 }
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #f38d8d;
+  border: none;
+  padding: 10px 20px;
+}
+button a {
+  color: #171717;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Cabin", sans-serif;
+  color: #171717;
+}
+
+h1, h2, h3, h4, a {
+  font-family: "Oswald", sans-serif;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4rem;
+}
+h2.homePage {
+  font-size: 8rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+h4.homePage {
+  font-size: 1.6rem;
+}
+
+header.homePage {
+  background-color: #b9dde7;
+}
