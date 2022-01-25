@@ -16,7 +16,31 @@
 .linksSection {
     background-color: $offWhite;
     .flexContainer {
-    display: flex;
+        padding: 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .textContainer {
+            width: 50%;
+            position: relative;
+            padding: 0 40px 60px 80px;
+            p {
+                padding: 25px 0 0;
+            }
+            .fa-image,
+            .fa-user-alt,
+            .fa-desktop,
+            .fa-phone {
+                font-size: 1.4rem;
+            }
+        }
+        .bubble {
+            background-color: $primary;
+            padding: 10px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
     }
 }
 

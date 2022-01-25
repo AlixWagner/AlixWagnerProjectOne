@@ -402,9 +402,34 @@ header.homePage .wrapper h2 img {
   background-color: #f6f6f6;
 }
 .linksSection .flexContainer {
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.linksSection .flexContainer .textContainer {
+  width: 50%;
+  position: relative;
+  padding: 0 40px 60px 80px;
+}
+.linksSection .flexContainer .textContainer p {
+  padding: 25px 0 0;
+}
+.linksSection .flexContainer .textContainer .fa-image,
+.linksSection .flexContainer .textContainer .fa-user-alt,
+.linksSection .flexContainer .textContainer .fa-desktop,
+.linksSection .flexContainer .textContainer .fa-phone {
+  font-size: 1.4rem;
+}
+.linksSection .flexContainer .bubble {
+  background-color: #b9dde7;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -5px;
 }
 
 .blogLinks {
@@ -545,4 +570,13 @@ header.homePage .wrapper h2 img {
 }
 .gallery .wrapper .imgContainer {
   width: calc((100%/3) - 24px);
+}
+
+footer {
+  background-color: #171717;
+  text-align: center;
+  color: #f6f6f6;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 10px;
 }
