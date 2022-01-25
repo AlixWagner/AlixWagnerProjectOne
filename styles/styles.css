@@ -397,3 +397,152 @@ header.homePage .wrapper h2 img {
 .whosHarper .wrapper .textContainer p {
   padding: 25px 0 35px;
 }
+
+.linksSection {
+  background-color: #f6f6f6;
+}
+.linksSection .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogLinks {
+  width: 100%;
+  position: relative;
+}
+.blogLinks .shadowOne {
+  display: block;
+  height: 350px;
+  width: 51%;
+  background-color: #68b0c1;
+  position: absolute;
+  z-index: 5;
+  top: -20px;
+  left: 0;
+}
+.blogLinks .shadowTwo {
+  display: block;
+  height: 350px;
+  width: 49%;
+  background-color: #b9dde7;
+  position: absolute;
+  z-index: 5;
+  bottom: -40px;
+  right: 0;
+}
+.blogLinks .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.blogLinks .flexContainer .imgContainer {
+  width: 50%;
+  height: 350px;
+  position: relative;
+  z-index: 10;
+}
+.blogLinks .flexContainer .imgContainer img {
+  height: 100%;
+}
+.blogLinks .flexContainer .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: calc(50% - 100px);
+}
+.blogLinks .flexContainer .textContainer p {
+  padding: 25px 0 35px;
+}
+.blogLinks .first {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+.blogLinks .first .imgContainer {
+  top: -40px;
+}
+.blogLinks .first .textContainer {
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+.blogLinks .second {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.blogLinks .second .imgContainer {
+  bottom: -20px;
+}
+.blogLinks .second .textContainer {
+  margin-right: 100px;
+  padding-top: 20px;
+}
+.blogLinks .second button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.harpersJourney {
+  background-color: #f6f6f6;
+}
+.harpersJourney .flexContainer {
+  padding: 110px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.harpersJourney .flexContainer .imgContainer {
+  width: 25%;
+  -webkit-box-shadow: 20px 20px 0 #227284;
+          box-shadow: 20px 20px 0 #227284;
+  margin-bottom: 20px;
+}
+.harpersJourney .flexContainer .imgContainer img {
+  height: 100%;
+}
+.harpersJourney .flexContainer .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 65%;
+}
+
+.gallery .wrapper {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .wrapper .imgContainer {
+  width: calc((100%/3) - 24px);
+}

@@ -12,3 +12,118 @@
         }
     }
 }
+
+.linksSection {
+    background-color: $offWhite;
+    .flexContainer {
+    display: flex;
+    }
+}
+
+.blogLinks {
+    width:100%;
+    position: relative;
+    .shadowOne {
+        display: block;
+        height: 350px;
+        width: 51%;
+        background-color: $secondary;
+        position: absolute;
+        z-index: 5;
+        top:-20px;
+        left:0;
+    }
+    .shadowTwo {
+        display: block;
+        height: 350px;
+        width: 49%;
+        background-color: $primary;
+        position: absolute;
+        z-index: 5;
+        bottom:-40px;
+        right:0;
+    }
+    .flexContainer {
+        display: flex;
+        width: 100%;
+        .imgContainer {
+            width: 50%;
+            height: 350px;
+            position: relative;
+            z-index: 10;
+            img {
+                height: 100%;
+            }
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: calc(50% - 100px);
+            p {
+                padding: 25px 0 35px;
+            }
+        }
+    }
+    .first {
+        align-items: flex-end;
+        margin-bottom: 20px;
+        .imgContainer {
+            top: -40px;
+        }
+        .textContainer {
+            margin-left: 100px;
+            padding-bottom: 20px;
+        }
+    }
+    .second {
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        .imgContainer {
+            bottom: -20px;
+        }
+        .textContainer {
+            margin-right: 100px;
+            padding-top: 20px;
+        }
+        button {
+            align-self: flex-end;
+        }
+    }
+}
+
+.harpersJourney {
+    background-color: $offWhite;
+    .flexContainer {
+        padding: 110px 0 100px;
+        display: flex;
+        justify-content: space-between;
+        .imgContainer {
+            width: 25%;
+            box-shadow: 20px 20px 0 $tertiary;
+            img {
+                height: 100%;
+            }
+            margin-bottom: 20px;
+        }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 65%;
+        }
+
+    }
+}
+
+.gallery {
+    .wrapper {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        .imgContainer {
+            width: calc((100%/3) - 24px);
+        }
+    }
+}
