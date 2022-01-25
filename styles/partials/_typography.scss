@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-size: 1rem;;
+    font-size: 1rem;
     font-family: $bodyFont;
     color: $black;
 }
@@ -38,4 +38,8 @@ a {
     &.currentPage {
         color: $offWhite;
     }
+}
+
+p {
+    line-height: 1.6rem;
 }

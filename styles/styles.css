@@ -307,6 +307,10 @@ a.currentPage {
   color: #f6f6f6;
 }
 
+p {
+  line-height: 1.6rem;
+}
+
 nav {
   background-color: #b9dde7;
   display: -webkit-box;
@@ -357,7 +361,7 @@ header.homePage .wrapper {
 header.homePage .wrapper .imgContainer {
   width: 40%;
   position: relative;
-  top: 40px;
+  top: 60px;
   -webkit-box-shadow: 20px 20px white;
           box-shadow: 20px 20px white;
 }
@@ -366,11 +370,30 @@ header.homePage .wrapper .imgContainer img {
 }
 header.homePage .wrapper h2 {
   position: relative;
-  padding: 30px 35px 30px 80px;
+  padding: 30px 35px 30px 100px;
 }
 header.homePage .wrapper h2 img {
   width: 8rem;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.whosHarper {
+  background-color: #f6f6f6;
+}
+.whosHarper .wrapper {
+  padding: 110px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.whosHarper .wrapper .textContainer {
+  width: calc(60% - 100px);
+}
+.whosHarper .wrapper .textContainer p {
+  padding: 25px 0 35px;
 }
