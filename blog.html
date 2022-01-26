@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/214b10b636.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Harper | Blog</title>
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <h1>Harper</h1>
+            <ul>
+                <li><a href="./blog.html" class="currentPage">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="blog">
+        <div class="imgBanner">
+            <img src="assets/assets/blog-image-1.jpg" aria-hidden="true">
+        </div>
+        <div class="wrapper">
+            <h2>Blog</h2>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="blogpost">
+                <h3>My Favourite Travel Destinations</h3>
+                <p>Monday October 8th, 2018 by Harper</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores, non soluta modi nostrum laudantium, velit officia ut, dolorum temporibus voluptates tenetur aperiam quas eligendi iure excepturi voluptatum sunt. Quis, voluptas sint. Unde, odit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem placeat velit voluptatibus. Perspiciatis aut molestias voluptate qui et impedit necessitatibus iste possimus! Vitae praesentium maxime ad perferendis ea! Mollitia id, quos fuga rem, necessitatibus reiciendis non repudiandae cumque ullam ipsa, sapiente corrupti possimus placeat! Porro, quibusdam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio sed sint doloribus provident explicabo, consequatur quae error, esse voluptates accusamus, assumenda eos cum mollitia labore facere laboriosam temporibus libero obcaecati excepturi incidunt? Adipisci, nemo ratione dolorum nam debitis voluptatibus voluptate repellendus, soluta accusantium natus eos dignissimos suscipit? Cupiditate expedita laborum voluptatum blanditiis harum molestias culpa voluptatibus assumenda nisi laudantium quod voluptates nobis quam aut, amet ea! Laboriosam nesciunt rerum suscipit corrupti, ipsum dolore! Quos laudantium omnis, error eius consequuntur eaque iure, facere ratione sed sapiente aliquid impedit repellat! Sunt mollitia quo corporis ipsa, nisi iusto.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi, ut rem nihil tempore dignissimos aperiam doloremque praesentium quisquam mollitia provident voluptates, aut iste esse itaque error molestias. Quos, voluptates.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates eius est laudantium labore mollitia tempore fugit tempora dicta nisi, possimus similique ex deserunt enim. Similique ullam, placeat labore harum debitis tempore repellat hic illum cum atque molestias aliquam culpa consectetur nisi?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ex fugit laboriosam error assumenda voluptatibus! Ipsa veniam, vel error quia commodi asperiores laboriosam consequuntur porro ea. Veritatis modi quibusdam aut tenetur? Quasi maxime est optio quia ex illum doloribus! Repudiandae, vel ducimus! Repellat accusantium eveniet autem, saepe tempore maiores pariatur culpa exercitationem at magni natus explicabo iste eligendi, similique est ipsam, excepturi quidem facere sunt. Nihil quam maxime officiis quo, necessitatibus, a expedita ipsa assumenda, dolor totam quos quod minima mollitia laudantium corporis atque sequi blanditiis tempora consectetur natus fugit consequatur! Velit ducimus repellendus magnam nulla?</p>
+            </section>
+            <section class="commentSection">
+                <div class="blogComment">
+                    <div class="imgContainer">
+                        <img src="./assets/assets/blog-image-3.jpg" aria-hidden="true">
+                    </div>
+                    <div class="textContainer">
+                        <p>Tuesday October 9th, 2018 by Maggie</p>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifund lacus, vitae ullamcorper metus. Sed sollicitidin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus. eu aliquet arcu.</p>
+                    </div>
+                    <div class="blogComment">
+                        <div class="imgContainer">
+                            <img src="./assets/assets/blog-image-4.jpg" aria-hidden="true">
+                        </div>
+                        <div class="textContainer">
+                            <p>Wednesday October 10th, 2018 by Daisy</p>
+                            <p>Donec viverra eleifund lacus, vitae ullamcorper metus. Sed sollicitidin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus. eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="commentForm">
+                <div class="wrapper">
+                    <form action="#" method="POST" name="postComment" class="customerIdeas">
+                        <div class="firstLine">
+                            <div class="formSection userName">
+                                <label for="userName">Name</label>
+                                <input type="text" id="userName" name="userName" required>
+                            </div>
+                            <div class="formSection userEmail">
+                                <label for="userEmail">Email</label>
+                                <input type="email" id="userEmail" name="userEmail"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="userComment">
+                            <label for="userComment">Message</label>
+                            <textarea name="userComment" id="userComment"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Post Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <aside>
+                <section class="aboutHarper">
+                    <div class="imgContainer">
+                        <img src="./assets/assets/blog-image-2.jpg" alt="a picture of Harper laying on a light grey shag carpet wearing a pink faux-fur jacket over a pastel floral tanktop. Their hand is reaching up gently against a turquoise wall.">
+                    </div>
+                    <div class="textContainer">
+                        <h4>About Harper</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempore tempora corporis. <a href="#">Find out more.</a></p>
+                    </div>
+                </section>
+                <section class="recentPosts">
+                    <h4>Recent Posts</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
