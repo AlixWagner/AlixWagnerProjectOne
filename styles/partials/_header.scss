@@ -4,6 +4,7 @@ header.homePage {
     .wrapper {
         display: flex;
         align-items: center;
+        position: relative;
         .imgContainer {
             width: 40%;
             position: relative;
@@ -17,7 +18,7 @@ header.homePage {
             position: relative;
             padding: 30px 35px 30px 100px;
             img {
-                width: 8rem;
+                width: clamp(4rem, 12vw, 8rem);
                 position: absolute;
                 top:0;
                 right:0;
@@ -25,3 +26,4 @@ header.homePage {
         }
     }
 }
+
