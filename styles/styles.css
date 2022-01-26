@@ -347,6 +347,23 @@ nav .navBar h1 {
   padding: 10px 25px;
 }
 
+header.bannerHeader .imgBanner {
+  height: 40vh;
+  overflow: hidden;
+}
+header.bannerHeader .imgBanner img {
+  height: 100%;
+}
+header.bannerHeader .wrapper {
+  position: relative;
+  height: 1px;
+  top: -1px;
+}
+header.bannerHeader .wrapper h2 {
+  position: absolute;
+  bottom: -32px;
+}
+
 header.homePage {
   background-color: #b9dde7;
 }

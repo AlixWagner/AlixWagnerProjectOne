@@ -1,4 +1,23 @@
 
+header.bannerHeader {
+    .imgBanner {
+        height: 40vh;
+        overflow: hidden;
+        img {
+            height: 100%;
+        }
+    }
+    .wrapper {
+        position: relative;
+        height:1px;
+        top: -1px;
+        h2 {
+            position: absolute;
+            bottom:-32px;
+        }
+    }
+}
+
 header.homePage {
     background-color: $primary;
     .wrapper {
