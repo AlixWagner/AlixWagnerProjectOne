@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/214b10b636.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Harper | Contact</title>
+</head>
+<body>
+    <nav class="headerNav">
+        <div class="navBar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <h1>Harper</h1>
+            <ul>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html" class="currentPage">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bannerHeader">
+        <div class="imgBanner">
+            <img src="assets/assets/contact-image-1.jpg" aria-hidden="true">
+        </div>
+        <div class="wrapper">
+            <h2>contact Me</h2>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="flexContainer">
+                <section class="contactSection">
+                    <nav class="socialsNav">
+                        <ul>
+                            <li><a href="#">
+                                <i class="fa fa-facebook-f"></i>
+                                <span class="sr-only">Link to Facebook</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa fa-twitter"></i>
+                                <span class="sr-only">Link to Instagram</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa fa-linkedin"></i>
+                                <span class="sr-only">Link to Facebook</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa fa-instagram"></i>
+                                <span class="sr-only">Link to Snapchat</span>
+                            </a></li>
+                        </ul>
+                    </nav>
+                    <a href="mailto:info@email.com">info@email.com</a>
+                    <address>123-456-7890<br>123 Queen Street West, Unit 10<br>Toronto,Ontario<br>M5V2D5</address>
+                </section>
+                <section class="contactForm">
+                    <form action="#" method="POST" name="postComment" class="commentForm">
+                        <div class="firstLine">
+                            <div class="formSection userName">
+                                <label for="userName">Name</label>
+                                <input type="text" id="userName" name="userName" required>
+                            </div>
+                            <div class="formSection userEmail">
+                                <label for="userEmail">Email</label>
+                                <input type="email" id="userEmail" name="userEmail" required>
+                            </div>
+                        </div>
+                        <div class="userComment">
+                            <label for="userComment">Message</label>
+                            <textarea name="userComment" id="userComment"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+    </footer>
+</body>
+</html>

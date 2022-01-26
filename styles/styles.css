@@ -275,7 +275,7 @@ body {
   color: #171717;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, a, button {
   font-family: "Oswald", sans-serif;
   color: #171717;
   text-transform: uppercase;
@@ -311,7 +311,7 @@ p {
   line-height: 1.6rem;
 }
 
-nav {
+nav.headerNav {
   background-color: #b9dde7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +320,7 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
 }
-nav .navBar {
+nav.headerNav .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,18 +332,18 @@ nav .navBar {
       -ms-flex-align: center;
           align-items: center;
 }
-nav .navBar ul {
+nav.headerNav .navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav .navBar ul li {
+nav.headerNav .navBar ul li {
   padding: 0 20px;
 }
-nav .navBar ul li a {
+nav.headerNav .navBar ul li a {
   line-height: 1.45rem;
 }
-nav .navBar h1 {
+nav.headerNav .navBar h1 {
   padding: 10px 25px;
 }
 

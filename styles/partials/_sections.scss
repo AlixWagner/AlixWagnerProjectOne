@@ -1,3 +1,4 @@
+// home page styling
 .whosHarper {
     background-color: $offWhite;
     .wrapper {
@@ -8,6 +9,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            // width to keep it in line with h2
             width: calc(60% - 100px);
             p {
                 padding: 25px 0 35px;
@@ -77,6 +79,7 @@
             width: 50%;
             height: 350px;
             position: relative;
+            // make the photos float above the shadows:
             z-index: 10;
             img {
                 height: 100%;
@@ -154,3 +157,5 @@
         }
     }
 }
+
+// blog page styling
