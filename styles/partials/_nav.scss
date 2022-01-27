@@ -1,4 +1,7 @@
 nav.headerNav {
+    li {
+    list-style: none;
+    }
     background-color: $primary;
     display: flex;
     justify-content: center;

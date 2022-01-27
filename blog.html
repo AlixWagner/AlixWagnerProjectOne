@@ -36,10 +36,10 @@
             <h2>Blog</h2>
         </div>
     </header>
-    <main>
+    <main class="blogPage">
         <div class="wrapper">
             <section class="blogpost">
-                <h3>My Favourite Travel Destinations</h3>
+                <h4 class="scaleUp">My Favourite Travel Destinations</h3>
                 <p>Monday October 8th, 2018 by Harper</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti deleniti dolores, non soluta modi nostrum laudantium, velit officia ut, dolorum temporibus voluptates tenetur aperiam quas eligendi iure excepturi voluptatum sunt. Quis, voluptas sint. Unde, odit!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rem placeat velit voluptatibus. Perspiciatis aut molestias voluptate qui et impedit necessitatibus iste possimus! Vitae praesentium maxime ad perferendis ea! Mollitia id, quos fuga rem, necessitatibus reiciendis non repudiandae cumque ullam ipsa, sapiente corrupti possimus placeat! Porro, quibusdam.</p>
@@ -73,17 +73,17 @@
                     <form action="#" method="POST" name="postComment" class="commentForm">
                         <div class="firstLine">
                             <div class="formSection userName">
-                                <label for="userName">Name</label>
+                                <label for="userName" class="sr-only">Name</label>
                                 <input type="text" id="userName" name="userName" required>
                             </div>
                             <div class="formSection userEmail">
-                                <label for="userEmail">Email</label>
+                                <label class="sr-only" for="userEmail">Email</label>
                                 <input type="email" id="userEmail" name="userEmail"
                                     required>
                             </div>
                         </div>
                         <div class="userComment">
-                            <label for="userComment">Message</label>
+                            <label class="sr-only" for="userComment">Message</label>
                             <textarea name="userComment" id="userComment"></textarea>
                         </div>
                         <div>
@@ -99,16 +99,16 @@
                     </div>
                     <div class="textContainer">
                         <h4>About Harper</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempore tempora corporis. <a href="#">Find out more.</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempore. <a href="#">Find out more.</a></p>
                     </div>
                 </section>
                 <section class="recentPosts">
                     <h4>Recent Posts</h4>
                     <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
                     </ul>
                 </section>
             </aside>
