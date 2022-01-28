@@ -17,15 +17,28 @@
 <body>
     <nav class="headerNav">
         <div class="navBar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <h1>Harper</h1>
-            <ul>
-                <li><a href="./blog.html" class="currentPage">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+            <div class="headerNavDesktop">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <h1>Harper</h1>
+                <ul>
+                    <li><a href="./blog.html" class="currentPage">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="headerNavMobile">
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <ul class="mainMenu">
+                    <li><a class="navLink" href="./index.html">Home</a></li>
+                    <li><a class="navLink" href="#">About</a></li>
+                    <li><a class="navLink" href="./blog.html">Blog</a></li>
+                    <li><a class="navLink" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="bannerHeader">

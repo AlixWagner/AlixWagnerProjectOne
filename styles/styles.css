@@ -344,7 +344,7 @@ nav.headerNav {
 nav.headerNav li {
   list-style: none;
 }
-nav.headerNav .navBar {
+nav.headerNav .navBar .headerNavDesktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,19 +356,80 @@ nav.headerNav .navBar {
       -ms-flex-align: center;
           align-items: center;
 }
-nav.headerNav .navBar ul {
+nav.headerNav .navBar .headerNavDesktop ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav.headerNav .navBar ul li {
+nav.headerNav .navBar .headerNavDesktop ul li {
   padding: 0 20px;
 }
-nav.headerNav .navBar ul li a {
+nav.headerNav .navBar .headerNavDesktop ul li a {
   line-height: 1.45rem;
 }
-nav.headerNav .navBar h1 {
+nav.headerNav .navBar .headerNavDesktop h1 {
   padding: 10px 25px;
+}
+
+/* mobile menu nonsense */
+.headerNavMobile {
+  display: none;
+}
+
+nav.headerNav .navBar {
+  width: 100%;
+}
+nav.headerNav .navBar .headerNavMobile h1 {
+  font-size: clamp(2rem, 12vw, 3rem);
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: 35px;
+  color: #f6f6f6;
+}
+nav.headerNav .navBar .headerNavMobile ul {
+  background: #e3e4eacc;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 100px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+nav.headerNav .navBar .headerNavMobile ul a {
+  display: inline-block;
+  color: #171717;
+  font-size: 40px;
+  width: 100%;
+  padding: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+nav.headerNav .navBar .headerNavMobile ul a:hover, nav.headerNav .navBar .headerNavMobile ul a:focus {
+  color: #f6f6f6;
+  background: #227284;
+  opacity: 0.6;
+}
+
+input[type=checkbox]:checked + ul.mainMenu {
+  height: auto;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label[for=toggle] {
+  position: absolute;
+  top: 24px;
+  right: 35px;
+  color: white;
+  z-index: 10;
+}
+label[for=toggle] .fa-bars {
+  font-size: clamp(2rem, 12vw, 3rem);
 }
 
 header.bannerHeader {
@@ -613,6 +674,9 @@ header.homePage .wrapper h2 img {
           align-items: flex-start;
   width: 65%;
 }
+.harpersJourney .flexContainer .textContainer p {
+  padding: 20px 0;
+}
 
 .gallery .wrapper {
   padding: 100px 0;
@@ -663,6 +727,7 @@ header.homePage .wrapper h2 img {
 .blogPage aside {
   position: absolute;
   width: calc(35% - 40px);
+  min-width: 350px;
   left: 0;
   top: 0;
 }
@@ -722,6 +787,62 @@ header.homePage .wrapper h2 img {
 }
 .commentSection .blogComment:last-child {
   border-bottom: 5px solid #227284;
+}
+
+.contactPage {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+.contactPage .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactSection {
+  padding: 50px 40px;
+  width: calc(35% - 40px);
+  min-width: 350px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 300px;
+}
+.contactSection nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactSection nav ul li {
+  list-style: none;
+}
+.contactSection nav ul li .fa-instagram,
+.contactSection nav ul li .fa-facebook-f,
+.contactSection nav ul li .fa-twitter,
+.contactSection nav ul li .fa-linkedin-in {
+  font-size: 1.6rem;
+  color: #227284;
+  margin-right: 30px;
+}
+.contactSection .email {
+  text-transform: none;
+}
+.contactSection address {
+  font-style: normal;
 }
 
 .commentForm,
@@ -800,6 +921,30 @@ footer {
   .whosHarper .wrapper .textContainer p {
     width: 90%;
   }
+
+  .blogLinks .flexContainer .textContainer {
+    width: calc(50% - 40px);
+    padding: 20px 0;
+  }
+  .blogLinks .flexContainer .textContainer p {
+    padding-bottom: 20px;
+  }
+  .blogLinks .flexContainer .imgContainer {
+    width: 50%;
+  }
+  .blogLinks .first .textContainer {
+    margin-left: 40px;
+  }
+  .blogLinks .second .textContainer {
+    margin-right: 40px;
+  }
+
+  .blogpost,
+.commentForm,
+.contactForm,
+.commentSection {
+    width: calc(100% - 390px);
+  }
 }
 @media (max-width: 900px) {
   header.homePage .wrapper {
@@ -845,6 +990,71 @@ footer {
   .whosHarper .wrapper .textContainer p {
     width: 90%;
   }
+
+  .linksSection .flexContainer .textContainer {
+    padding: 0;
+  }
+  .linksSection .flexContainer .textContainer h4 {
+    padding-left: 80px;
+  }
+
+  .blogLinks {
+    width: 100%;
+    position: relative;
+  }
+  .blogLinks .shadowOne {
+    width: 100%;
+  }
+  .blogLinks .shadowTwo {
+    width: 100%;
+    bottom: 21%;
+  }
+  .blogLinks .flexContainer {
+    width: 100%;
+  }
+  .blogLinks .flexContainer .imgContainer {
+    width: 100%;
+    height: 350px;
+  }
+  .blogLinks .flexContainer .textContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  .blogLinks .flexContainer .textContainer p {
+    padding: 25px 0 35px;
+  }
+  .blogLinks .first,
+.blogLinks .second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .blogLinks .first .imgContainer,
+.blogLinks .second .imgContainer {
+    top: -40px;
+  }
+  .blogLinks .first .textContainer,
+.blogLinks .second .textContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+  }
+  .blogLinks .first .textContainer p,
+.blogLinks .second .textContainer p {
+    padding-bottom: 20px;
+  }
+  .blogLinks .first button,
+.blogLinks .second button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .blogLinks .first .textContainer {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 700px) {
   header.homePage .wrapper {
@@ -860,5 +1070,66 @@ footer {
   }
   header.homePage .wrapper h2 img {
     display: none;
+  }
+
+  .headerNavMobile {
+    display: block;
+  }
+
+  nav.headerNav .navBar .headerNavDesktop {
+    display: none;
+  }
+
+  .blogLinks {
+    width: 100%;
+  }
+  .blogLinks .shadowOne {
+    display: none;
+  }
+  .blogLinks .shadowTwo {
+    display: none;
+  }
+  .blogLinks .wrapper {
+    width: 100%;
+  }
+  .blogLinks .flexContainer .imgContainer {
+    width: 100%;
+    height: 350px;
+  }
+  .blogLinks .flexContainer .imgContainer img {
+    height: 100%;
+  }
+  .blogLinks .flexContainer .textContainer {
+    margin: 0 auto;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 40px;
+  }
+  .blogLinks .flexContainer .textContainer p {
+    padding: 25px 0 35px;
+  }
+  .blogLinks .first,
+.blogLinks .second {
+    margin-bottom: 20px;
+  }
+  .blogLinks .first .imgContainer,
+.blogLinks .second .imgContainer {
+    top: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .blogLinks .first button,
+.blogLinks .second button {
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }

@@ -142,6 +142,9 @@
             justify-content: space-between;
             align-items: flex-start;
             width: 65%;
+            p {
+                padding: 20px 0;
+            }
         }
 
     }
@@ -186,6 +189,7 @@
 .blogPage aside {
     position: absolute;
     width: calc(35% - 40px);
+    min-width: 350px;
     left: 0;
     top: 0;
 }
@@ -237,5 +241,46 @@
     }
     .blogComment:last-child {
         border-bottom: 5px solid $tertiary;
+    }
+}
+
+// contact page styling
+.contactPage {
+    background-color: $offWhite;
+    padding: 100px 0;
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.contactSection {
+    padding: 50px 40px;
+    width: calc(35% - 40px);
+    min-width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 300px;
+    nav ul {
+        display: flex;
+        li {
+            list-style: none;
+            .fa-instagram,
+            .fa-facebook-f,
+            .fa-twitter, 
+            .fa-linkedin-in {
+                font-size: 1.6rem;
+                color: $tertiary;
+                margin-right: 30px;
+            }
+        }
+    }
+    .email {
+        text-transform: none;
+    }
+    address {
+        font-style: normal;
     }
 }

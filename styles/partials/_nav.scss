@@ -5,7 +5,7 @@ nav.headerNav {
     background-color: $primary;
     display: flex;
     justify-content: center;
-    .navBar {
+    .navBar .headerNavDesktop {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -22,5 +22,67 @@ nav.headerNav {
         h1 {
             padding: 10px 25px;
         }
+    }
+}
+
+/* mobile menu nonsense */
+.headerNavMobile {
+    display:none;
+}
+
+nav.headerNav {
+    .navBar {
+        width: 100%;
+        .headerNavMobile {
+            h1 {
+                font-size: clamp(2rem, 12vw, 3rem);
+                position: absolute;
+                z-index: 10;
+                top: 20px;
+                left: 35px;
+                color: $offWhite;
+            }
+            ul {
+                background: #e3e4eacc;
+                position: absolute;
+                z-index: 10;
+                width: 100%;
+                top: 100px;
+                transition: all 0.5s;
+                height: 0;
+                overflow: hidden;
+                a {
+                    display: inline-block;
+                    color: $black;
+                    font-size: 40px;
+                    width: 100%;
+                    padding: 20px;
+                    transition: all 0.6s;
+                    &:hover,
+                    &:focus {
+                        color: $offWhite;
+                        background: $tertiary;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="checkbox"]:checked + ul.mainMenu {
+	height: auto;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label[for="toggle"] {
+	position: absolute;
+	top: 24px;
+	right: 35px;
+	color: white;
+	z-index: 10;
+    .fa-bars {
+        font-size: clamp(2rem, 12vw, 3rem);
     }
 }

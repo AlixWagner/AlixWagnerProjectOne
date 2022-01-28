@@ -17,15 +17,29 @@
 <body>
     <nav class="headerNav">
         <div class="navBar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <h1>Harper</h1>
-            <ul>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html" class="currentPage">Contact</a></li>
-            </ul>
+            <div class="headerNavDesktop">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <h1>Harper</h1>
+                <ul>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html" class="currentPage">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="headerNavMobile">
+                <h1>Harper</h1>
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
+                <ul class="mainMenu">
+                    <li><a class="navLink" href="./index.html">Home</a></li>
+                    <li><a class="navLink" href="#">About</a></li>
+                    <li><a class="navLink" href="./blog.html">Blog</a></li>
+                    <li><a class="navLink" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header class="bannerHeader">
@@ -36,7 +50,7 @@
             <h2>contact Me</h2>
         </div>
     </header>
-    <main>
+    <main class="contactPage">
         <div class="wrapper">
             <div class="flexContainer">
                 <section class="contactSection">
@@ -60,7 +74,7 @@
                             </a></li>
                         </ul>
                     </nav>
-                    <a href="mailto:info@email.com">info@email.com</a>
+                    <a class="email" href="mailto:info@email.com">info@email.com</a>
                     <address>123-456-7890<br>123 Queen Street West, Unit 10<br>Toronto,Ontario<br>M5V2D5</address>
                 </section>
                 <section class="contactForm">
@@ -83,7 +97,7 @@
                                 id="userComment"></textarea>
                         </div>
                         <div class="buttonContainer">
-                            <button type="submit">Post Comment</button>
+                            <button type="submit">Submit</button>
                         </div>
                     </form>
                 </section>
