@@ -67,20 +67,23 @@
                     <form action="#" method="POST" name="postComment" class="commentForm">
                         <div class="firstLine">
                             <div class="formSection userName">
-                                <label class="sr-only" for="userName">Name</label>
-                                <input type="text" id="userName" name="userName" required>
+                                <label for="userName" class="sr-only">Name</label>
+                                <input placeholder="Name" type="text" id="userName" name="userName"
+                                    required>
                             </div>
                             <div class="formSection userEmail">
                                 <label class="sr-only" for="userEmail">Email</label>
-                                <input type="email" id="userEmail" name="userEmail" required>
+                                <input placeholder="Email address" type="email" id="userEmail"
+                                    name="userEmail" required>
                             </div>
                         </div>
                         <div class="userComment">
                             <label class="sr-only" for="userComment">Message</label>
-                            <textarea name="userComment" id="userComment"></textarea>
+                            <textarea placeholder="Message" name="userComment"
+                                id="userComment"></textarea>
                         </div>
-                        <div>
-                            <button type="submit">Submit</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Post Comment</button>
                         </div>
                     </form>
                 </section>

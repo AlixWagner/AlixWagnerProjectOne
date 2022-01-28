@@ -1,0 +1,40 @@
+
+
+.commentForm, 
+.contactForm {
+    width: 65%;
+    form {
+        width: 100%;
+        .firstLine {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div.formSection {
+                width: calc(50% - 10px);
+                input {
+                    width: 100%;
+                    border: none;
+                    padding: 28px 0 28px 40px;
+                }
+            }
+        }
+        .userComment {
+            margin: 20px 0;
+            width: 100%;
+            textarea {
+                width: 100%;
+                padding: 28px 40px;
+                resize: none;
+                border: none;
+                height: 280px;
+            }
+        }
+        .buttonContainer {
+            width: 100%;
+            button {
+                width: 100%;
+            }
+        }
+        
+    }
+}

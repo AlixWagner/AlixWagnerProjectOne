@@ -162,6 +162,7 @@
 
 .blogPage {
     background-color: $offWhite;
+    padding: 100px 0;
 }
 
 .blogPage .wrapper {
@@ -216,5 +217,25 @@
                 text-transform: none;
             }
         }
+    }
+}
+.commentSection {
+    margin: 20px 0;
+    .blogComment {
+        background-color: white;
+        padding: 40px;
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .imgContainer {
+            width: 90px;
+        }
+        .textContainer {
+            width: calc(100% - 110px);
+        }
+    }
+    .blogComment:last-child {
+        border-bottom: 5px solid $tertiary;
     }
 }

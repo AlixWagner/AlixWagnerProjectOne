@@ -307,6 +307,31 @@ p {
   line-height: 1.6rem;
 }
 
+::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
 nav.headerNav {
   background-color: #b9dde7;
   display: -webkit-box;
@@ -347,7 +372,6 @@ nav.headerNav .navBar h1 {
 }
 
 header.bannerHeader {
-  padding-bottom: 100px;
   background-color: #f6f6f6;
 }
 header.bannerHeader .imgBanner {
@@ -605,6 +629,7 @@ header.homePage .wrapper h2 img {
 
 .blogPage {
   background-color: #f6f6f6;
+  padding: 100px 0;
 }
 
 .blogPage .wrapper {
@@ -672,6 +697,81 @@ header.homePage .wrapper h2 img {
   font-size: 1rem;
   font-family: "Cabin", sans-serif;
   text-transform: none;
+}
+
+.commentSection {
+  margin: 20px 0;
+}
+.commentSection .blogComment {
+  background-color: white;
+  padding: 40px;
+  margin: 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commentSection .blogComment .imgContainer {
+  width: 90px;
+}
+.commentSection .blogComment .textContainer {
+  width: calc(100% - 110px);
+}
+.commentSection .blogComment:last-child {
+  border-bottom: 5px solid #227284;
+}
+
+.commentForm,
+.contactForm {
+  width: 65%;
+}
+.commentForm form,
+.contactForm form {
+  width: 100%;
+}
+.commentForm form .firstLine,
+.contactForm form .firstLine {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.commentForm form .firstLine div.formSection,
+.contactForm form .firstLine div.formSection {
+  width: calc(50% - 10px);
+}
+.commentForm form .firstLine div.formSection input,
+.contactForm form .firstLine div.formSection input {
+  width: 100%;
+  border: none;
+  padding: 28px 0 28px 40px;
+}
+.commentForm form .userComment,
+.contactForm form .userComment {
+  margin: 20px 0;
+  width: 100%;
+}
+.commentForm form .userComment textarea,
+.contactForm form .userComment textarea {
+  width: 100%;
+  padding: 28px 40px;
+  resize: none;
+  border: none;
+  height: 280px;
+}
+.commentForm form .buttonContainer,
+.contactForm form .buttonContainer {
+  width: 100%;
+}
+.commentForm form .buttonContainer button,
+.contactForm form .buttonContainer button {
+  width: 100%;
 }
 
 footer {
