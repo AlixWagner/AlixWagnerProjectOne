@@ -26,6 +26,7 @@ header.homePage {
         align-items: center;
         position: relative;
         .imgContainer {
+            z-index: 1;
             width: 40%;
             position: relative;
             top: 60px;
@@ -35,6 +36,7 @@ header.homePage {
             }
         }
         h2 {
+            z-index: 2;
             position: relative;
             padding: 30px 35px 30px 100px;
             img {
