@@ -483,11 +483,20 @@
     }
 
     // blog page 
+    .blogPage aside {
+        .aboutHarper {
+            .textContainer {
+                padding-left: 40px;
+                padding-bottom: 20px;
+            }
+            padding: 0;
+        }
+        .recentPosts {
+            padding: 30px 0 20px 40px;
+        }
+    }
     .commentSection {
         .blogComment {
-            .imgContainer {
-                
-            }
             .textContainer {
                 margin-top: 20px;
                 p:first-child {
