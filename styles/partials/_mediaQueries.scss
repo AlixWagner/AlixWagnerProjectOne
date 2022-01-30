@@ -1,4 +1,5 @@
 @media (max-width:1250px) {
+    // home page top down
     .whosHarper {
         .wrapper {
             padding: 80px 0;
@@ -37,16 +38,46 @@
             }
         }
     }
+    .gallery {
+        .wrapper {
+            padding: 40px 0;
+        }
+    }
+    // base styling for other pages
     .blogpost,
     .commentForm,
     .contactForm,
     .commentSection {
         width: calc(100% - 390px);
     }
+    // blog page 
+    .commentSection {
+        .blogComment {
+            .textContainer {
+                p:first-child {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    .commentForm, 
+    .contactForm {
+        form {
+            .firstLine {
+                flex-wrap: wrap;
+                .userName {
+                    margin-bottom: 20px 
+                }
+                div.formSection {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
 }
 
-@media (max-width:900px) {
+@media (max-width:915px) {
     // main page header
     header.homePage {
         .wrapper {
@@ -160,6 +191,65 @@
             }
         }
     }
+    .harpersJourney {
+        .flexContainer {
+            flex-direction: column;
+            padding: 40px 0;
+            align-items: center;
+            overflow: hidden;
+            .imgContainer {
+                width: 80%;
+                margin-bottom: 50px;
+                max-height: 400px;
+                box-shadow: 100px 20px 0 $tertiary, -100px 20px 0 $tertiary;
+                img {
+                    object-position: top;
+                }
+            }
+            .textContainer {
+                width: 100%;
+                button {
+                align-self: flex-end;
+            }
+            }
+        }
+    }
+    .gallery {
+        .wrapper {
+            div:nth-last-child(2) {
+                display: none;
+            }
+            .imgContainer {
+            width: calc(50% - 20px);
+        }
+        }
+    }
+    // blog page top down 
+    .blogpost, 
+    .commentSection {
+        width: 100%;
+    }
+    .blogPage aside {
+        position: static;
+        width: 100%;
+    }
+    .commentForm {
+        width: 100%;
+    }
+
+    .commentForm, 
+    .contactForm {
+        form {
+            .firstLine {
+                .userName {
+                    margin-bottom: 0; 
+                }
+                div.formSection {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
 
 }
 
@@ -227,9 +317,65 @@
             }
         }
     }
+    .harpersJourney {
+        .flexContainer {
+            .imgContainer {
+                width: 100%;
+                margin-bottom: 30px;
+                max-height: 400px;
+                box-shadow: none;
+            }
+        }
+    }
+
+    // blog page 
+    .blogPage {
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    .commentForm, 
+    .contactForm {
+        form {
+            .firstLine {
+                flex-wrap: wrap;
+                .userName {
+                    margin-bottom: 20px 
+                }
+                div.formSection {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+    .gallery {
+        .wrapper {
+            div:last-child {
+                display: none;
+            }
+            .imgContainer {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 405px) {
+
+    .whosHarper {
+        .wrapper {
+            .textContainer {
+                button {
+                align-self: center;
+                width: 100%;
+            }
+            }
+        }
+    }
     
     .linksSection {
         .flexContainer {
@@ -262,6 +408,17 @@
             button {
                 align-self: center;
                 width: 100%;
+            }
+        }
+    }
+    .harpersJourney {
+        .flexContainer {
+            .textContainer {
+                text-align: center;
+                button {
+                align-self: center;
+                width: 100%;
+            }
             }
         }
     }

@@ -746,6 +746,7 @@ header.homePage .wrapper h2 img {
   padding: 30px 0;
 }
 .aboutHarper a {
+  display: inline-block;
   font-family: "Cabin", sans-serif;
   text-transform: none;
 }
@@ -945,14 +946,36 @@ footer {
     margin-right: 40px;
   }
 
+  .gallery .wrapper {
+    padding: 40px 0;
+  }
+
   .blogpost,
 .commentForm,
 .contactForm,
 .commentSection {
     width: calc(100% - 390px);
   }
+
+  .commentSection .blogComment .textContainer p:first-child {
+    padding-bottom: 10px;
+  }
+
+  .commentForm form .firstLine,
+.contactForm form .firstLine {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .commentForm form .firstLine .userName,
+.contactForm form .firstLine .userName {
+    margin-bottom: 20px;
+  }
+  .commentForm form .firstLine div.formSection,
+.contactForm form .firstLine div.formSection {
+    width: 100%;
+  }
 }
-@media (max-width: 900px) {
+@media (max-width: 915px) {
   header.homePage .wrapper {
     padding: 10px 0 30px;
     -webkit-box-orient: vertical;
@@ -1080,6 +1103,66 @@ footer {
   .blogLinks .first .textContainer {
     margin-bottom: 40px;
   }
+
+  .harpersJourney .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .harpersJourney .flexContainer .imgContainer {
+    width: 80%;
+    margin-bottom: 50px;
+    max-height: 400px;
+    -webkit-box-shadow: 100px 20px 0 #227284, -100px 20px 0 #227284;
+            box-shadow: 100px 20px 0 #227284, -100px 20px 0 #227284;
+  }
+  .harpersJourney .flexContainer .imgContainer img {
+    -o-object-position: top;
+       object-position: top;
+  }
+  .harpersJourney .flexContainer .textContainer {
+    width: 100%;
+  }
+  .harpersJourney .flexContainer .textContainer button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  .gallery .wrapper div:nth-last-child(2) {
+    display: none;
+  }
+  .gallery .wrapper .imgContainer {
+    width: calc(50% - 20px);
+  }
+
+  .blogpost,
+.commentSection {
+    width: 100%;
+  }
+
+  .blogPage aside {
+    position: static;
+    width: 100%;
+  }
+
+  .commentForm {
+    width: 100%;
+  }
+
+  .commentForm form .firstLine .userName,
+.contactForm form .firstLine .userName {
+    margin-bottom: 0;
+  }
+  .commentForm form .firstLine div.formSection,
+.contactForm form .firstLine div.formSection {
+    width: calc(50% - 10px);
+  }
 }
 @media (max-width: 700px) {
   header.homePage .wrapper {
@@ -1150,8 +1233,48 @@ footer {
 .blogLinks .second .imgContainer {
     top: 0px;
   }
+
+  .harpersJourney .flexContainer .imgContainer {
+    width: 100%;
+    margin-bottom: 30px;
+    max-height: 400px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .blogPage .wrapper {
+    width: 100%;
+  }
+
+  .commentForm form .firstLine,
+.contactForm form .firstLine {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .commentForm form .firstLine .userName,
+.contactForm form .firstLine .userName {
+    margin-bottom: 20px;
+  }
+  .commentForm form .firstLine div.formSection,
+.contactForm form .firstLine div.formSection {
+    width: 100%;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .gallery .wrapper div:last-child {
+    display: none;
+  }
+  .gallery .wrapper .imgContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 405px) {
+  .whosHarper .wrapper .textContainer button {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 100%;
+  }
+
   .linksSection .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1182,6 +1305,15 @@ footer {
   }
   .blogLinks .first button,
 .blogLinks .second button {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 100%;
+  }
+
+  .harpersJourney .flexContainer .textContainer {
+    text-align: center;
+  }
+  .harpersJourney .flexContainer .textContainer button {
     -ms-flex-item-align: center;
         align-self: center;
     width: 100%;
