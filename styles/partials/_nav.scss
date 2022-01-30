@@ -57,12 +57,12 @@ nav.headerNav {
                     font-size: 40px;
                     width: 100%;
                     padding: 20px 40px;
-                    transition: all 0.6s;
+                    transition: background 0.7s, color 0.3s;
                     &:hover,
                     &:focus {
                         color: $offWhite;
-                        background: $tertiary;
-                        opacity: 0.6;
+                        background: #f38d8dab;
+                        opacity: 0.9;
                     }
                 }
             }
@@ -70,11 +70,15 @@ nav.headerNav {
     }
 }
 
-input[type="checkbox"]:checked + ul.mainMenu {
+input[type="checkbox"]:checked ~ ul.mainMenu {
 	height: auto;
 }
 input[type="checkbox"] {
-	display: none;
+	position: absolute;
+    opacity: 0;
+    &:focus ~ label{
+        background-color: #f38d8dab;
+    }
 }
 label[for="toggle"] {
 	position: fixed;
@@ -88,5 +92,9 @@ label[for="toggle"] {
     border-radius: 5px;
     .fa-bars {
         font-size: clamp(2rem, 12vw, 3rem);
+    }
+    &:hover,
+    &:focus {
+        background-color: #f38d8dab;
     }
 }

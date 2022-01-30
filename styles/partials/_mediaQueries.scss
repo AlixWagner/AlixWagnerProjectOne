@@ -119,7 +119,6 @@
             }
         }
     }
-
     .linksSection {
         .imgBanner {
             height: 275px;
@@ -141,7 +140,6 @@
             }
         }
     }
-
     .blogLinks {
         width: 100%;
         position: relative;
@@ -229,7 +227,8 @@
     .commentSection {
         width: 100%;
     }
-    .blogPage {
+    .blogPage, 
+    .contactPage {
         padding: 60px 0;
     }
     .blogPage aside {
@@ -256,7 +255,6 @@
     .commentForm {
         width: 100%;
     }
-
     .commentForm, 
     .contactForm {
         form {
@@ -270,6 +268,20 @@
             }
         }
     }
+    // contact page 
+    .contactPage {
+        .flexContainer {
+            flex-direction: column;
+            .contactSection {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            .contactForm {
+                width: 100%;
+            }
+        }
+    }
+
 
 }
 
@@ -405,12 +417,12 @@
         }
     }
     .blogPage aside {
+        min-width: 200px;
         .aboutHarper {
             flex-direction: column;
             .imgContainer {
                 width: 100%;
                 max-height: 350px;
-                overflow: hidden;
                 img {
                     height: 100%;
                     object-position: bottom;
@@ -419,6 +431,13 @@
             .textContainer {
                 width: 100%;
             }
+        }
+    }
+    // contact page 
+    .contactPage .wrapper {
+        width: 100%;
+        .contactSection {
+            min-width: 200px;
         }
     }
 }
@@ -486,13 +505,12 @@
     .blogPage aside {
         .aboutHarper {
             .textContainer {
-                padding-left: 40px;
-                padding-bottom: 20px;
+                padding: 0 30px 30px 30px;
             }
             padding: 0;
         }
         .recentPosts {
-            padding: 30px 0 20px 40px;
+            padding: 20px 0 20px 20px;
         }
     }
     .commentSection {
@@ -505,4 +523,5 @@
             }
         }
     }
+    // contact page 
 }

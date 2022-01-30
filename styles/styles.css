@@ -404,21 +404,25 @@ nav.headerNav .navBar .headerNavMobile ul a {
   font-size: 40px;
   width: 100%;
   padding: 20px 40px;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: background 0.7s, color 0.3s;
+  transition: background 0.7s, color 0.3s;
 }
 nav.headerNav .navBar .headerNavMobile ul a:hover, nav.headerNav .navBar .headerNavMobile ul a:focus {
   color: #f6f6f6;
-  background: #227284;
-  opacity: 0.6;
+  background: #f38d8dab;
+  opacity: 0.9;
 }
 
-input[type=checkbox]:checked + ul.mainMenu {
+input[type=checkbox]:checked ~ ul.mainMenu {
   height: auto;
 }
 
 input[type=checkbox] {
-  display: none;
+  position: absolute;
+  opacity: 0;
+}
+input[type=checkbox]:focus ~ label {
+  background-color: #f38d8dab;
 }
 
 label[for=toggle] {
@@ -434,6 +438,9 @@ label[for=toggle] {
 }
 label[for=toggle] .fa-bars {
   font-size: clamp(2rem, 12vw, 3rem);
+}
+label[for=toggle]:hover, label[for=toggle]:focus {
+  background-color: #f38d8dab;
 }
 
 header.bannerHeader {
@@ -1153,7 +1160,8 @@ footer {
     width: 100%;
   }
 
-  .blogPage {
+  .blogPage,
+.contactPage {
     padding: 60px 0;
   }
 
@@ -1202,6 +1210,20 @@ footer {
   .commentForm form .firstLine div.formSection,
 .contactForm form .firstLine div.formSection {
     width: calc(50% - 10px);
+  }
+
+  .contactPage .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage .flexContainer .contactSection {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contactPage .flexContainer .contactForm {
+    width: 100%;
   }
 }
 @media (max-width: 700px) {
@@ -1328,6 +1350,9 @@ footer {
     display: block;
   }
 
+  .blogPage aside {
+    min-width: 200px;
+  }
   .blogPage aside .aboutHarper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1337,7 +1362,6 @@ footer {
   .blogPage aside .aboutHarper .imgContainer {
     width: 100%;
     max-height: 350px;
-    overflow: hidden;
   }
   .blogPage aside .aboutHarper .imgContainer img {
     height: 100%;
@@ -1346,6 +1370,13 @@ footer {
   }
   .blogPage aside .aboutHarper .textContainer {
     width: 100%;
+  }
+
+  .contactPage .wrapper {
+    width: 100%;
+  }
+  .contactPage .wrapper .contactSection {
+    min-width: 200px;
   }
 }
 @media (max-width: 415px) {
@@ -1403,11 +1434,10 @@ footer {
     padding: 0;
   }
   .blogPage aside .aboutHarper .textContainer {
-    padding-left: 40px;
-    padding-bottom: 20px;
+    padding: 0 30px 30px 30px;
   }
   .blogPage aside .recentPosts {
-    padding: 30px 0 20px 40px;
+    padding: 20px 0 20px 20px;
   }
 
   .commentSection .blogComment .textContainer {
