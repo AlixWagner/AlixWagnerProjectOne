@@ -206,6 +206,9 @@
         font-family: $bodyFont;
         text-transform: none;
     }
+    .imgContainer {
+        overflow: hidden;
+    }
 }
 .recentPosts {
     margin: 40px 0;
