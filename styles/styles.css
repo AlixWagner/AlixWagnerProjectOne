@@ -279,7 +279,7 @@ h1, h2, h3, h4, a, button {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 10vw, 4rem);
 }
 h2.homePage {
   font-size: clamp(4rem, 12vw, 8rem);
@@ -293,7 +293,7 @@ h4 {
   font-size: 1.2rem;
 }
 h4.scaleUp {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 4vw,1.6rem);
 }
 
 a {
@@ -741,6 +741,13 @@ header.homePage .wrapper h2 img {
 .aboutHarper {
   background-color: white;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .aboutHarper h4 {
   padding: 30px 0;
@@ -1146,9 +1153,42 @@ footer {
     width: 100%;
   }
 
+  .blogPage {
+    padding: 60px 0;
+  }
+
   .blogPage aside {
     position: static;
     width: 100%;
+  }
+  .blogPage aside .aboutHarper {
+    margin-top: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogPage aside .aboutHarper .textContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
+  }
+  .blogPage aside .aboutHarper .imgContainer {
+    width: 40%;
+  }
+  .blogPage aside .recentPosts {
+    margin: 40px 0 0 0;
   }
 
   .commentForm {
@@ -1242,6 +1282,9 @@ footer {
             box-shadow: none;
   }
 
+  .blogPage p {
+    font-size: 0.9rem;
+  }
   .blogPage .wrapper {
     width: 100%;
   }
@@ -1267,8 +1310,45 @@ footer {
   .gallery .wrapper .imgContainer {
     width: 100%;
   }
+
+  .commentSection .blogComment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentSection .blogComment .textContainer {
+    margin-top: -60px;
+    width: 100%;
+  }
+  .commentSection .blogComment .textContainer p:first-child {
+    padding-left: 110px;
+  }
+  .commentSection .blogComment .textContainer p:first-child span {
+    display: block;
+  }
+
+  .blogPage aside .aboutHarper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage aside .aboutHarper .imgContainer {
+    width: 100%;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  .blogPage aside .aboutHarper .imgContainer img {
+    height: 100%;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .blogPage aside .aboutHarper .textContainer {
+    width: 100%;
+  }
 }
-@media (max-width: 405px) {
+@media (max-width: 415px) {
   .whosHarper .wrapper .textContainer button {
     -ms-flex-item-align: center;
         align-self: center;
@@ -1317,5 +1397,12 @@ footer {
     -ms-flex-item-align: center;
         align-self: center;
     width: 100%;
+  }
+
+  .commentSection .blogComment .textContainer {
+    margin-top: 20px;
+  }
+  .commentSection .blogComment .textContainer p:first-child {
+    padding-left: 0px;
   }
 }

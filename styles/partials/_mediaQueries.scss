@@ -229,9 +229,29 @@
     .commentSection {
         width: 100%;
     }
+    .blogPage {
+        padding: 60px 0;
+    }
     .blogPage aside {
         position: static;
         width: 100%;
+        .aboutHarper {
+            margin-top: 40px;
+            flex-direction: row;
+            justify-content: space-between;
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50%;
+            }
+            .imgContainer {
+                width: 40%;
+            }
+        }
+        .recentPosts {
+            margin: 40px 0 0 0;
+        }
     }
     .commentForm {
         width: 100%;
@@ -254,6 +274,7 @@
 }
 
 @media (max-width: 700px) {
+
     header.homePage {
         .wrapper {
             width: 100%;
@@ -329,7 +350,11 @@
     }
 
     // blog page 
+
     .blogPage {
+        p {
+            font-size: 0.9rem;
+        }
         .wrapper {
             width: 100%;
         }
@@ -352,6 +377,7 @@
 }
 
 @media (max-width: 600px) {
+    // home page
     .gallery {
         .wrapper {
             div:last-child {
@@ -362,10 +388,43 @@
             }
         }
     }
+    // blog page 
+    .commentSection {
+        .blogComment {
+            flex-direction: column;
+            .textContainer {
+                margin-top: -60px;
+                width: 100%;
+                p:first-child {
+                    padding-left: 110px;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .blogPage aside {
+        .aboutHarper {
+            flex-direction: column;
+            .imgContainer {
+                width: 100%;
+                max-height: 350px;
+                overflow: hidden;
+                img {
+                    height: 100%;
+                    object-position: bottom;
+                }
+            }
+            .textContainer {
+                width: 100%;
+            }
+        }
+    }
 }
 
-@media (max-width: 405px) {
-
+@media (max-width: 415px) {
+    // home page top down
     .whosHarper {
         .wrapper {
             .textContainer {
@@ -419,6 +478,21 @@
                 align-self: center;
                 width: 100%;
             }
+            }
+        }
+    }
+
+    // blog page 
+    .commentSection {
+        .blogComment {
+            .imgContainer {
+                
+            }
+            .textContainer {
+                margin-top: 20px;
+                p:first-child {
+                    padding-left:0px;
+                }
             }
         }
     }
