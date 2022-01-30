@@ -1220,6 +1220,10 @@ footer {
   .blogPage aside .aboutHarper .imgContainer {
     width: 40%;
   }
+  .blogPage aside .aboutHarper .imgContainer img {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
   .blogPage aside .recentPosts {
     margin: 40px 0 0 0;
   }
