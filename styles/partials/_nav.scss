@@ -76,7 +76,7 @@ input[type="checkbox"]:checked ~ ul.mainMenu {
 input[type="checkbox"] {
 	position: absolute;
     opacity: 0;
-    &:focus ~ label{
+    &:focus ~ label {
         background-color: #f38d8dab;
     }
 }

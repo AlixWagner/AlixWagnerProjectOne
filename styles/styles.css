@@ -259,6 +259,8 @@ button {
 }
 button a {
   color: #171717;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 html {
@@ -543,7 +545,13 @@ header.homePage .wrapper h2 img {
   position: relative;
   padding: 0 40px 60px 80px;
 }
+.linksSection .flexContainer .textContainer h4 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .linksSection .flexContainer .textContainer p {
+  font-family: "Cabin", sans-serif;
+  text-transform: none;
   padding: 25px 0 0;
 }
 .linksSection .flexContainer .textContainer .fa-image,
@@ -551,8 +559,12 @@ header.homePage .wrapper h2 img {
 .linksSection .flexContainer .textContainer .fa-desktop,
 .linksSection .flexContainer .textContainer .fa-phone {
   font-size: 1.4rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .linksSection .flexContainer .bubble {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background-color: #b9dde7;
   padding: 10px;
   border-radius: 50%;
@@ -769,8 +781,9 @@ header.homePage .wrapper h2 img {
 }
 .aboutHarper .imgContainer img {
   height: 100%;
-  -o-object-position: bottom;
-     object-position: bottom;
+  width: 100%;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 
 .recentPosts {
@@ -872,6 +885,9 @@ header.homePage .wrapper h2 img {
 }
 .contactSection address {
   font-style: normal;
+}
+.contactSection address a {
+  font-family: "Cabin", sans-serif;
 }
 
 .commentForm,
@@ -1437,7 +1453,7 @@ footer {
     padding: 0;
   }
   .blogPage aside .aboutHarper .textContainer {
-    padding: 0 30px 30px 0px;
+    padding: 0 30px 30px 30px;
   }
   .blogPage aside .recentPosts {
     padding: 20px 0 20px 20px;
@@ -1449,4 +1465,96 @@ footer {
   .commentSection .blogComment .textContainer p:first-child {
     padding-left: 0px;
   }
+}
+.headerNavDesktop a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.headerNavDesktop a:hover,
+.headerNavDesktop a:focus {
+  color: #f6f6f6;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px #ca6868, 2px 2px 3px #f38d8d;
+}
+
+button {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover, button:focus {
+  color: #f6f6f6;
+  -webkit-box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+          box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+}
+button:hover a, button:focus a {
+  color: #f6f6f6;
+}
+
+.linksSection .textContainer:hover .bubble,
+.linksSection .textContainer:focus .bubble {
+  -webkit-box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+          box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+  background-color: #68b0c1;
+}
+.linksSection .textContainer:hover .bubble .fa-image,
+.linksSection .textContainer:hover .bubble .fa-user-alt,
+.linksSection .textContainer:hover .bubble .fa-desktop,
+.linksSection .textContainer:hover .bubble .fa-phone,
+.linksSection .textContainer:focus .bubble .fa-image,
+.linksSection .textContainer:focus .bubble .fa-user-alt,
+.linksSection .textContainer:focus .bubble .fa-desktop,
+.linksSection .textContainer:focus .bubble .fa-phone {
+  color: #f6f6f6;
+}
+.linksSection .textContainer:hover h4,
+.linksSection .textContainer:focus h4 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #68b0c1;
+          text-decoration-color: #68b0c1;
+  text-shadow: 1px 1px 4px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+}
+
+.blogPage aside a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.blogPage aside a:hover, .blogPage aside a:focus {
+  color: #f38d8d;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f38d8d;
+          text-decoration-color: #f38d8d;
+  text-shadow: 2px 2px 4px #f6f6f6;
+}
+
+.contactPage .contactSection li .fa-facebook-f,
+.contactPage .contactSection li .fa-twitter,
+.contactPage .contactSection li .fa-linkedin-in,
+.contactPage .contactSection li .fa-instagram {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactPage .contactSection li .fa-facebook-f:hover, .contactPage .contactSection li .fa-facebook-f:focus,
+.contactPage .contactSection li .fa-twitter:hover,
+.contactPage .contactSection li .fa-twitter:focus,
+.contactPage .contactSection li .fa-linkedin-in:hover,
+.contactPage .contactSection li .fa-linkedin-in:focus,
+.contactPage .contactSection li .fa-instagram:hover,
+.contactPage .contactSection li .fa-instagram:focus {
+  color: #f38d8d;
+}
+.contactPage .contactSection .email {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactPage .contactSection .email:hover, .contactPage .contactSection .email:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f38d8d;
+          text-decoration-color: #f38d8d;
+}
+.contactPage .contactSection address a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactPage .contactSection address a:hover, .contactPage .contactSection address a:focus {
+  color: #f38d8d;
 }

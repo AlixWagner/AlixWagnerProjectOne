@@ -25,10 +25,15 @@
         display: flex;
         flex-wrap: wrap;
         .textContainer {
+            h4 {
+                transition: 0.5s;
+            }
             width: 50%;
             position: relative;
             padding: 0 40px 60px 80px;
             p {
+                font-family: $bodyFont;
+                text-transform: none;
                 padding: 25px 0 0;
             }
             .fa-image,
@@ -36,9 +41,11 @@
             .fa-desktop,
             .fa-phone {
                 font-size: 1.4rem;
+                transition: 0.3s;
             }
         }
         .bubble {
+            transition: 0.3s;
             background-color: $primary;
             padding: 10px;
             border-radius: 50%;
@@ -210,7 +217,8 @@
         overflow: hidden;
         img {
             height: 100%;
-            object-position: bottom;
+            width: 100%;
+            object-position: center bottom;
         }
     }
 }
@@ -292,5 +300,8 @@
     }
     address {
         font-style: normal;
+        a {
+            font-family: $bodyFont;
+        }
     }
 }

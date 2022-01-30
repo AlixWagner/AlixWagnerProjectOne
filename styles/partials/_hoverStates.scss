@@ -1,0 +1,98 @@
+// general focus states
+.headerNavDesktop {
+    a {
+        transition: 0.3s;
+    }
+    a:hover,
+    a:focus {
+        // text-decoration: underline;
+        color: $offWhite;
+        font-size: 1rem;
+        text-shadow: 1px 1px 2px #ca6868, 2px 2px 3px $accent;
+    }
+}
+button {
+    transition: 0.2s;
+    &:hover,
+    &:focus {
+        color: $offWhite;
+        box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+        a {
+            color: $offWhite;
+        }
+    }
+}
+
+
+// home page styling
+.linksSection {
+    .textContainer:hover, 
+    .textContainer:focus {
+        .bubble {
+            box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+            background-color: $secondary;
+            .fa-image,
+            .fa-user-alt,
+            .fa-desktop,
+            .fa-phone {
+                color: $offWhite;
+            }
+        }
+        h4 {
+            text-decoration: underline;
+            text-decoration-color: $secondary;
+            text-shadow:  1px 1px 4px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
+        }
+    }
+}
+
+// blog page styling
+.blogPage {
+    aside {
+        a {
+            transition: 0.4s;
+            &:hover,
+            &:focus {
+                color: $accent;
+                text-decoration: underline;
+                text-decoration-color: $accent;
+                text-shadow:  2px 2px 4px $offWhite;
+            }   
+        }
+    }
+}
+
+// contact page styling
+.contactPage {
+    .contactSection {
+        li {
+            .fa-facebook-f,
+            .fa-twitter,
+            .fa-linkedin-in,
+            .fa-instagram {
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    color: $accent;
+                }
+            }
+        }
+        .email {
+            transition: 0.3s;
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                text-decoration-color: $accent;
+            }
+        }
+        address {
+            a {
+                transition: 0.3s;
+                &:hover,
+                &:focus {
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
