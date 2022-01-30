@@ -208,6 +208,10 @@
     }
     .imgContainer {
         overflow: hidden;
+        img {
+            height: 100%;
+            object-position: bottom;
+        }
     }
 }
 .recentPosts {

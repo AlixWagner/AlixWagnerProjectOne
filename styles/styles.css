@@ -767,6 +767,11 @@ header.homePage .wrapper h2 img {
 .aboutHarper .imgContainer {
   overflow: hidden;
 }
+.aboutHarper .imgContainer img {
+  height: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 
 .recentPosts {
   margin: 40px 0;
@@ -1365,11 +1370,6 @@ footer {
   .blogPage aside .aboutHarper .imgContainer {
     width: 100%;
     max-height: 350px;
-  }
-  .blogPage aside .aboutHarper .imgContainer img {
-    height: 100%;
-    -o-object-position: bottom;
-       object-position: bottom;
   }
   .blogPage aside .aboutHarper .textContainer {
     width: 100%;
