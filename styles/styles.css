@@ -678,6 +678,7 @@ header.homePage .wrapper h2 img {
   width: 25%;
   -webkit-box-shadow: 20px 20px 0 #227284;
           box-shadow: 20px 20px 0 #227284;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 .harpersJourney .flexContainer .imgContainer img {

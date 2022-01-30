@@ -138,6 +138,7 @@
         .imgContainer {
             width: 25%;
             box-shadow: 20px 20px 0 $tertiary;
+            overflow: hidden;
             img {
                 height: 100%;
             }
