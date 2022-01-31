@@ -1,4 +1,4 @@
-
+// establishing base styles across documents
 *, h1, h2, h3, h4{
     margin: 0;
     padding: 0;
@@ -7,13 +7,11 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
 .wrapper{
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;
 }
-
 button {
     background-color: $accent;
     border: none;

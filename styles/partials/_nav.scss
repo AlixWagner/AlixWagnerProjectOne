@@ -1,3 +1,4 @@
+// general and desktop nav styling 
 nav.headerNav {
     li {
     list-style: none;
@@ -26,10 +27,11 @@ nav.headerNav {
 }
 
 /* mobile menu nonsense */
+// hide mobile/dropdown menu
 .headerNavMobile {
     display:none;
 }
-
+// dropdown menu styling
 nav.headerNav {
     .navBar {
         width: 100%;
@@ -44,6 +46,7 @@ nav.headerNav {
             }
             ul {
                 background: #e3e4eacc;
+                //dropdown menu to stay on page over content
                 position: fixed;
                 z-index: 20;
                 width: 100%;
@@ -69,17 +72,19 @@ nav.headerNav {
         }
     }
 }
-
+// styling to make checkbox label into functional nav
 input[type="checkbox"]:checked ~ ul.mainMenu {
 	height: auto;
 }
 input[type="checkbox"] {
-	position: absolute;
+    // checkbox fixed to label but not visible 
+	position: fixed;
     opacity: 0;
     &:focus ~ label {
         background-color: #f38d8dab;
     }
 }
+// fix toggle label to screen over content 
 label[for="toggle"] {
 	position: fixed;
 	top: 24px;

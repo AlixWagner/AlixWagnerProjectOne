@@ -1,4 +1,4 @@
-// home page styling
+// home page styling top down:
 .whosHarper {
     background-color: $offWhite;
     .wrapper {
@@ -17,7 +17,6 @@
         }
     }
 }
-
 .linksSection {
     background-color: $offWhite;
     .flexContainer {
@@ -55,10 +54,10 @@
         }
     }
 }
-
 .blogLinks {
     width:100%;
     position: relative;
+    // position colour blocking behind images that is responsive
     .shadowOne {
         display: block;
         height: 350px;
@@ -128,7 +127,6 @@
         }
     }
 }
-
 .harpersJourney {
     background-color: $offWhite;
     .flexContainer {
@@ -154,10 +152,8 @@
                 padding: 20px 0;
             }
         }
-
     }
 }
-
 .gallery {
     .wrapper {
         padding: 100px 0;
@@ -170,12 +166,10 @@
 }
 
 // blog page styling
-
 .blogPage {
     background-color: $offWhite;
     padding: 100px 0;
 }
-
 .blogPage .wrapper {
     position: relative;
     display: flex;
@@ -194,6 +188,7 @@
 .commentSection {
     width: 65%;
 }
+// position aside to side so that it can flex back at mobile/tablet
 .blogPage aside {
     position: absolute;
     width: calc(35% - 40px);

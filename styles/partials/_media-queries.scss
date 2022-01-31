@@ -43,14 +43,14 @@
             padding: 40px 0;
         }
     }
-    // base styling for other pages
+    // base styling for blog and contact pages
     .blogpost,
     .commentForm,
     .contactForm,
     .commentSection {
         width: calc(100% - 390px);
     }
-    // blog page 
+    // blog page styling
     .commentSection {
         .blogComment {
             .textContainer {
@@ -78,7 +78,7 @@
 }
 
 @media (max-width:915px) {
-    // main page header
+    // main page header adjust to centered small monitor/landscape tablet 
     header.homePage {
         .wrapper {
             padding: 10px 0 30px;
@@ -105,7 +105,7 @@
             }
         }
     }
-    // main page responsiveness - top down
+    // main page top down
     .whosHarper {
         .wrapper {
             padding: 60px 0;
@@ -286,7 +286,7 @@
 }
 
 @media (max-width: 700px) {
-
+    // main page header transition to tablet/mobile full screen hero header
     header.homePage {
         .wrapper {
             width: 100%;
@@ -303,14 +303,14 @@
             }
         }
     }
-
+    // transition to mobile/dropdown nav menu
     .headerNavMobile {
         display:block;
     }
     nav.headerNav .navBar .headerNavDesktop {
         display:none;
     }
-
+    // main page top down
     .blogLinks {
         width:100%;
         .shadowOne {
@@ -360,9 +360,7 @@
             }
         }
     }
-
     // blog page 
-
     .blogPage {
         p {
             font-size: 0.9rem;
@@ -371,7 +369,6 @@
             width: 100%;
         }
     }
-
     .commentForm, 
     .contactForm {
         form {
@@ -453,7 +450,6 @@
             }
         }
     }
-    
     .linksSection {
         .flexContainer {
             flex-direction: column;
@@ -474,7 +470,6 @@
             }
         }
     }
-    
     .blogLinks {
         .first,
         .second {
@@ -499,7 +494,6 @@
             }
         }
     }
-
     // blog page 
     .blogPage aside {
         .aboutHarper {
@@ -522,5 +516,4 @@
             }
         }
     }
-    // contact page 
 }
