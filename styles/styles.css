@@ -1268,6 +1268,11 @@ footer {
     display: none;
   }
 
+  header.bannerHeader .imgBanner {
+    height: 25vh;
+    min-height: 160px;
+  }
+
   .headerNavMobile {
     display: block;
   }
@@ -1349,6 +1354,14 @@ footer {
   .commentForm form .firstLine div.formSection,
 .contactForm form .firstLine div.formSection {
     width: 100%;
+  }
+  .commentForm form .firstLine div.formSection input,
+.contactForm form .firstLine div.formSection input {
+    padding: 20px 40px;
+  }
+  .commentForm form .userComment textarea,
+.contactForm form .userComment textarea {
+    padding: 20px 40px;
   }
 }
 @media (max-width: 600px) {

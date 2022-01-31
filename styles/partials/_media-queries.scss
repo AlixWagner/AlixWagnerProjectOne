@@ -304,6 +304,12 @@
             }
         }
     }
+    header.bannerHeader {
+        .imgBanner {
+            height: 25vh;
+            min-height: 160px;
+        }
+    }
     // transition to mobile/dropdown nav menu
     .headerNavMobile {
         display:block;
@@ -380,6 +386,14 @@
                 }
                 div.formSection {
                     width: 100%;
+                    input {
+                        padding: 20px 40px;
+                    }
+                }
+            }
+            .userComment {
+                textarea {
+                    padding: 20px 40px;
                 }
             }
         }
