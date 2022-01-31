@@ -1262,7 +1262,7 @@ footer {
     height: 85vh;
   }
   header.homePage .wrapper h2 {
-    bottom: -8%;
+    bottom: -70px;
   }
   header.homePage .wrapper h2 img {
     display: none;
@@ -1401,6 +1401,15 @@ footer {
   }
   .contactPage .wrapper .contactSection {
     min-width: 200px;
+  }
+
+  .commentForm form .firstLine div.formSection input,
+.contactForm form .firstLine div.formSection input {
+    border-bottom: 6px solid #f38d8d8e;
+  }
+  .commentForm form .userComment textarea,
+.contactForm form .userComment textarea {
+    border-bottom: 6px solid #f38d8d8e;
   }
 }
 @media (max-width: 415px) {

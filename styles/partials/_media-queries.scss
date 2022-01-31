@@ -297,7 +297,7 @@
                 height: 85vh;
             }
             h2 {
-                bottom: -8%;
+                bottom: -70px;
                 img {
                     display: none;
                 }
@@ -435,6 +435,23 @@
         width: 100%;
         .contactSection {
             min-width: 200px;
+        }
+    }
+    .commentForm, 
+    .contactForm {
+        form {
+            .firstLine {
+                div.formSection {
+                    input {
+                        border-bottom: 6px solid #f38d8d8e;
+                    }
+                }
+            }
+            .userComment {
+                textarea {
+                    border-bottom: 6px solid #f38d8d8e;
+                }
+            }
         }
     }
 }
