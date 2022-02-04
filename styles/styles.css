@@ -788,25 +788,78 @@ header.homePage .wrapper h2 img {
 }
 
 .recentPosts {
+  position: relative;
   margin: 40px 0;
   background-color: white;
-  padding: 40px;
+  padding: 40px 0 0 0;
+  overflow: hidden;
+}
+.recentPosts .slideButton {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 1.5rem;
+  color: #f38d8d;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.recentPosts .slideButton:hover, .recentPosts .slideButton:focus {
+  color: white;
+  background-color: #f38d8d9f;
+}
+.recentPosts .left {
+  left: 1rem;
+}
+.recentPosts .right {
+  right: 1rem;
 }
 .recentPosts ul {
-  padding-top: 30px;
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
 }
 .recentPosts ul li {
-  font-size: 0.5rem;
-  margin-left: 20px;
-  line-height: 1.45rem;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  list-style: none;
+  position: relative;
 }
-.recentPosts ul li a {
-  padding-left: 14px;
-  font-size: 1rem;
-  font-family: "Cabin", sans-serif;
-  text-transform: none;
+.recentPosts ul li a:hover {
+  -webkit-box-shadow: 4px 4px 8px grey;
+          box-shadow: 4px 4px 8px grey;
 }
-
+.recentPosts ul li h5 {
+  position: absolute;
+  z-index: 5;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.recentPosts ul li .slideImage {
+  -webkit-transition: 1s;
+  transition: 1s;
+  height: 350px;
+}
 .commentSection {
   margin: 20px 0;
 }
@@ -1487,7 +1540,7 @@ footer {
     padding: 0 30px 30px 30px;
   }
   .blogPage aside .recentPosts {
-    padding: 20px 0 20px 20px;
+    padding: 0;
   }
 
   .commentSection .blogComment .textContainer {
@@ -1545,11 +1598,11 @@ button:hover a, button:focus a {
   text-shadow: 1px 1px 4px rgba(145, 145, 145, 0.671), 2px 2px 4px rgba(145, 145, 145, 0.5);
 }
 
-.blogPage aside a {
+.blogPage aside .aboutHarper a {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.blogPage aside a:hover, .blogPage aside a:focus {
+.blogPage aside .aboutHarper a:hover, .blogPage aside .aboutHarper a:focus {
   color: #f38d8d;
   text-decoration: underline;
   -webkit-text-decoration-color: #f38d8d;
