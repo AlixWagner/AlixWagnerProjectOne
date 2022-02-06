@@ -1,3 +1,4 @@
+// BLOG PAGE JS ---
 // Create a sliding gallery of blog posts:
 const slider = document.querySelector(".galleryContainer");
 const slideImage = Array.from(document.querySelectorAll(".imageSlide"));
@@ -39,3 +40,21 @@ navButton.forEach(btn => {
         }
     })
 })
+
+// CONTACT & BLOG PAGE FORM JS ---
+// Submit confirmation:
+
+const form = document.querySelector("form");
+const userMessage = document.querySelector(".inputMessage");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    // get user name 
+    const userNameInput = document.querySelector("#userName");
+    const userName = userNameInput.value;
+    const insertName = document.querySelector(".insertName");
+    insertName.textContent = userName;
+    form.style.display = "none";
+    userMessage.style.display = "block";
+})
+

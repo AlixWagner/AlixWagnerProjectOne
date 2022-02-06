@@ -2,6 +2,15 @@
 .commentForm, 
 .contactForm {
     width: 65%;
+    .inputMessage {
+        display: none;
+        background-color: white;
+        padding: 40px;
+        span {
+            color: $accent;
+        }
+
+    }
     form {
         width: 100%;
         .firstLine {
