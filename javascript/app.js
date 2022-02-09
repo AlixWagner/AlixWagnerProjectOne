@@ -20,7 +20,7 @@ let moveImage = () => {
     if (i === slideImage.length) {
         i = 0;
     // if you move left from the first image - go to end slide
-    } else if (i == -1) {
+    } else if (i === -1) {
         i = slideImage.length - 1;
     }
     setPosition(i);
@@ -56,5 +56,28 @@ form.addEventListener("submit", function(e) {
     insertName.textContent = userName;
     form.style.display = "none";
     userMessage.style.display = "block";
+})
+
+// BLOG PAGE FORM JS ---
+// append comment to posted comments
+
+const blogForm = document.querySelector(".commentForm");
+
+blogForm.addEventListener("submit", function(e) {
+    const commentSection = document.querySelector(".commentSection");
+    const userName = document.querySelector("#userName").value;
+    const messageInput = document.querySelector("#userComment").value;
+    const newComment = document.createElement("div")
+    newComment.setAttribute("class", "blogComment")
+    newComment.innerHTML = `
+        <div class="imgContainer">
+            <img src="https://picsum.photos/90" aria-hidden="true">
+        </div>
+        <div class="textContainer">
+            <p>Just Now <span>by ${userName}</span></p>
+            <p>${messageInput}</p>
+        </div>
+    `;
+    commentSection.append(newComment);
 })
 
